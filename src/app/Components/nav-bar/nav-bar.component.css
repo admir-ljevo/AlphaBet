@@ -1,0 +1,53 @@
+.nav-bar-container{
+  height: 90px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #393e46;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+}
+.lijevi{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #393e46;
+  display: flex;
+}
+.logo-container{
+  display: flex;
+}
+#menu{
+  margin-top: 15px;
+  margin-left: 8px;
+
+}
+h1{
+  padding-top: 5px;
+  color: rgb(233,78,9);
+  font-weight: normal;
+  font-family: 'Roboto';
+}
+
+.menu {
+  height: 30px;
+  width: 30px;
+  margin-left: 8px;
+  margin-top: 30px;
+}
+.logo{
+  height: 30px;
+  width: 30px;
+  margin-left: 8px;
+  margin-top: 30px;
+}
+
+.desni{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #fd7014;
+}
