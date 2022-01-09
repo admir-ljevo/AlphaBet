@@ -1,7 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+
 .izbornik-container{
   position: absolute;
-  margin-top: 222px;
-  height: 150px;
+  margin-top: 290px;
+  height: 75px;
   width: 100%;
   background-color: #EEEEEE;
+}
+.izbornik-gornji{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #393e46;
+
+}
+.container-slika-tekst{
+
+justify-content: center;
+
+
+
+
+}
+.container-lopte{
+  position: relative;
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+
+.container-lopte-ikone{
+  margin-top: 3%;
+  position: relative;
+  border: 1px solid #222831;
+  border-radius: 50%;
+
+ justify-content: center;
+  height: 50%;
+  width: 10%;
+
+
+
+
+}
+
+img{
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+p{
+ color: lightgray;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: 'roboto';
+  font-size: small;
 }

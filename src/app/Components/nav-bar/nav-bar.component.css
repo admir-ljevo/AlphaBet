@@ -1,27 +1,37 @@
 .nav-bar-container{
+  top: 0;
   height: 90px;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #393e46;
+  background-color: #fd7014;
   position: fixed;
   display: flex;
   flex-direction: row;
 }
 .lijevi{
   padding: 0;
-  margin: 0;
+  margin-left: -1.9%;
   height: 100%;
   width: 50%;
   background-color: #393e46;
   display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  transform: skewX(-10deg);
 }
 .logo-container{
   display: flex;
 }
 #menu{
-  margin-top: 15px;
+  margin-top: 2%;
   margin-left: 8px;
+  -webkit-transform: skewX(10deg);
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  transform: skewX(10deg);
 
 }
 h1{
@@ -35,13 +45,18 @@ h1{
   height: 30px;
   width: 30px;
   margin-left: 8px;
-  margin-top: 30px;
+
+
 }
 .logo{
-  height: 30px;
-  width: 30px;
+  height: 27px;
+  width: 27px;
   margin-left: 3px;
   margin-top: 30px;
+  -webkit-transform: skewX(10deg);
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  transform: skewX(10deg);
 }
 
 .btn-container{
@@ -64,7 +79,7 @@ button {
 #buttonLog{
   height: 42px;
   width: 45%;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fd7014;
 
 
@@ -72,7 +87,7 @@ button {
 #buttonReg{
   height: 42px;
   width: 45%;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fd7014;
 
 
