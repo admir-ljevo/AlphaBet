@@ -1,0 +1,209 @@
+<app-nav-bar></app-nav-bar>
+<app-banners></app-banners>
+<app-izbornik></app-izbornik>
+<div class="sports-container">
+  <div class="naslov-container">
+    <img class="lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+    <h4>TOP LIGE</h4>
+
+  </div>
+
+  <div class="lige-sadrzaj">
+    <div class="lige-lista">
+      <div class="lige-item">
+        <div (click)="item1IsVisible = !item1IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/engleska.png" alt="">
+          <h4>Engleska: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item1IsVisible" class="liga-content">
+          <div class="rezultat-container">
+            <div class="grbovi-container">
+              <img class="tim-grb" src="../../../assets/Slike/Manchester-City-icon.png" alt="">
+              <img class="tim-grb" src="../../../assets/Slike/Arsenal.png" alt="">
+            </div>
+            <div class="timovi-container">
+              <h4 class="naziv-tima">Manchester City</h4>
+              <h4 class="naziv-tima">Arsenal</h4>
+            </div>
+            <div class="minuta-container">
+              <h6 class="minuta">22<span *ngIf="brojac%2===0" >'</span></h6>
+            </div>
+            <div class="trenutni-rezultat-container">
+              <h4 class="rezultat">2</h4>
+              <h4 class="rezultat">0</h4>
+            </div>
+            <div class="live-container">
+              <div class="bet-live-aktivan">
+                <h4 class="betlive" *ngIf="brojac2%2===0">BET</h4><h4 class="betlive" *ngIf="brojac2%2!==0">LIVE</h4>
+              </div>
+            </div>
+          </div>
+          <div class="rezultat-container">
+            <div class="grbovi-container">
+              <img class="tim-grb" src="../../../assets/Slike/manchester-united.png" alt="">
+              <img class="tim-grb" src="../../../assets/Slike/liverpool.png" alt="">
+            </div>
+            <div class="timovi-container">
+              <h4 class="naziv-tima">Manchester United</h4>
+              <h4 class="naziv-tima">Liverpool</h4>
+            </div>
+            <div class="minuta-container">
+              <h6 class="minuta">22<span *ngIf="brojac%2===0" >'</span></h6>
+            </div>
+            <div class="trenutni-rezultat-container">
+              <h4 class="rezultat">2</h4>
+              <h4 class="rezultat">1</h4>
+            </div>
+            <div class="live-container">
+              <div class="bet-live-aktivan">
+                <h4 class="betlive" *ngIf="brojac2%2===0">BET</h4><h4 class="betlive" *ngIf="brojac2%2!==0">LIVE</h4>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+      <div class="lige-item">
+        <div (click)="item2IsVisible = !item2IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/spanija.png" alt="">
+          <h4>Španjolska: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item2IsVisible" class="liga-content">
+          <div class="rezultat-container">
+            <div class="grbovi-container">
+              <img class="tim-grb" src="../../../assets/Slike/real-madrid.png">
+              <img class="tim-grb" src="../../../assets/Slike/barcelona.png" alt="">
+            </div>
+            <div class="timovi-container">
+              <h4 class="naziv-tima">Real Madrid</h4>
+              <h4 class="naziv-tima">Barcelona</h4>
+            </div>
+            <div class="minuta-container">
+                  <h6 class="minuta">45+1<span *ngIf="brojac%2===0" >'</span></h6>
+            </div>
+            <div class="trenutni-rezultat-container">
+                 <h4 class="rezultat">4</h4>
+                 <h4 class="rezultat">1</h4>
+            </div>
+            <div class="live-container">
+                   <div class="bet-live-aktivan">
+                     <h4 class="betlive" *ngIf="brojac2%2===0">BET</h4><h4 class="betlive" *ngIf="brojac2%2!==0">LIVE</h4>
+                   </div>
+            </div>
+          </div>
+          <div class="rezultat-container">
+            <div class="grbovi-container">
+              <img class="tim-grb" src="../../../assets/Slike/atletico-madrid.png" alt="">
+              <img class="tim-grb" src="../../../assets/Slike/villareal.png" alt="">
+            </div>
+            <div class="timovi-container">
+              <h4 class="naziv-tima">Atletico Madrid</h4>
+              <h4 class="naziv-tima">Villareal</h4>
+            </div>
+            <div class="minuta-container">
+              <h6 class="minuta">25<span *ngIf="brojac%2===0" >'</span></h6>
+            </div>
+            <div class="trenutni-rezultat-container">
+              <h4 class="rezultat">1</h4>
+              <h4 class="rezultat">0</h4>
+            </div>
+            <div class="live-container">
+              <div class="bet-live-aktivan">
+                <h4 class="betlive" *ngIf="brojac2%2===0">BET</h4><h4 class="betlive" *ngIf="brojac2%2!==0">LIVE</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item3IsVisible = !item3IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/italija.png" alt="">
+          <h4>Italija: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item3IsVisible" class="liga-content">
+
+            <div class="rezultat-container">
+              <div class="grbovi-container">
+                <img class="tim-grb" src="../../../assets/Slike/inter.png" alt="">
+                <img class="tim-grb" src="../../../assets/Slike/milan.png" alt="">
+              </div>
+              <div class="timovi-container">
+                <h4 class="naziv-tima">Inter</h4>
+                <h4 class="naziv-tima">Milan</h4>
+              </div>
+              <div class="minuta-container">
+                <h6 class="minuta">37<span *ngIf="brojac%2===0" >'</span></h6>
+              </div>
+              <div class="trenutni-rezultat-container">
+                <h4 class="rezultat">0</h4>
+                <h4 class="rezultat">0</h4>
+              </div>
+              <div class="live-container">
+                <div class="bet-live-aktivan">
+                  <h4 class="betlive" *ngIf="brojac2%2===0">BET</h4><h4 class="betlive" *ngIf="brojac2%2!==0">LIVE</h4>
+                </div>
+              </div>
+            </div>
+          <div class="rezultat-container">
+            <div class="grbovi-container">
+              <img class="tim-grb" src="../../../assets/Slike/benevento.png" alt="">
+              <img class="tim-grb" src="../../../assets/Slike/roma.png" alt="">
+            </div>
+            <div class="timovi-container">
+              <h4 class="naziv-tima">Benevento</h4>
+              <h4 class="naziv-tima">Roma</h4>
+            </div>
+            <div class="minuta-container">
+              <h6 class="minuta">79<span *ngIf="brojac%2===0" >'</span></h6>
+            </div>
+            <div class="trenutni-rezultat-container">
+              <h4 class="rezultat">2</h4>
+              <h4 class="rezultat">2</h4>
+            </div>
+            <div class="live-container">
+              <div class="bet-live-aktivan">
+                <h4 class="betlive" *ngIf="brojac2%2===0">BET</h4><h4 class="betlive" *ngIf="brojac2%2!==0">LIVE</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item4IsVisible = !item4IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/njemacka.png" alt="">
+          <h4>Njemačka: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item4IsVisible" class="liga-content">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item5IsVisible = !item5IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/francuska.png" alt="">
+          <h4>Francuska: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item5IsVisible" class="liga-content">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+</div>
+<app-footer>
+</app-footer>

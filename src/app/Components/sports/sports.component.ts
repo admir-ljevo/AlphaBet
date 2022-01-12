@@ -23,21 +23,6 @@ export class SportsComponent implements OnInit {
 
   public kvota: number=1.00;
 
-  kvota1(){
-
-  }
-  kvota2(){
-  }
-
-  kvota3(){
-  }
-
-  kvota4(){
-  }
-
-  kvota5(){
-  }
-
   constructor() {
 
   }

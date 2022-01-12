@@ -1,0 +1,165 @@
+<app-nav-bar></app-nav-bar>
+
+<button class="obrisi-tiket" *ngIf="brojac>0 && obrisiTiket===false" (click)="tiketObrisi()">Obriši tiket</button>
+
+<div class="prazan-tiket-container" *ngIf="brojac===0 || obrisiTiket===true">
+  <div class="prazan-gornji">
+    <h4>Trenutno nemate nijedan par na tiketu. Da biste napravili tiket vratite se na ponudu.</h4>
+
+  </div>
+  <div class="prazan-donji">
+    <a routerLink="/ponuda">
+      <button id="btn-ok">U redu</button>
+    </a>
+  </div>
+</div>
+
+<div class="tiket-container" [ngStyle]="{backgroundColor: brojac===0? '#393e46':'#EEEEEE'}"
+                             *ngIf="obrisiTiket===false"
+>
+
+
+
+
+     <div class="par-container" *ngIf="!kliknutZatvori1">
+       <div class="par">
+           <div class="par-naslov">
+             <img src="../../../assets/Slike/fudbal-ikona.png" alt="">
+             <h4>Man.Utd - Liverpool</h4>
+           </div>
+         <div class="naziv-sporta">
+             <h4 style="color: #222831">Nogomet</h4>
+             <p style="color: #222831">Tip: 1</p>
+         </div>
+         <div class="par-datum">
+           <img class="sat" src="../../../assets/Slike/clock.png" alt="">
+<h5>
+  10.01.2022(ned.) 14:00
+</h5>
+           <h6 style="float:right; margin-left: 7%; margin-top: 5%" >1.95</h6>
+
+         </div>
+
+       </div>
+       <div class="obrisi-container">
+         <img  (click)="Kliknut1()" class="zatvori" src="../../../assets/Slike/close.png" alt="">
+
+       </div>
+     </div>
+  <div class="par-container" *ngIf="!kliknutZatvori2">
+    <div class="par">
+      <div class="par-naslov">
+        <img src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        <h4>Real Madrid - Barcelona</h4>
+      </div>
+      <div class="naziv-sporta">
+        <h4 style="color: #222831">Nogomet</h4>
+        <p style="color: #222831">Tip: 1</p>
+      </div>
+      <div class="par-datum">
+        <img class="sat" src="../../../assets/Slike/clock.png" alt="">
+        <h5>
+          10.01.2022(ned.) 14:00
+        </h5>
+        <h6 style="float:right; margin-left: 7%; margin-top: 5%" >1.25</h6>
+      </div>
+
+    </div>
+    <div class="obrisi-container">
+      <img  (click)="Kliknut2()" class="zatvori" src="../../../assets/Slike/close.png" alt="">
+
+    </div>
+  </div>
+  <div class="par-container" *ngIf="!kliknutZatvori3">
+    <div class="par">
+      <div class="par-naslov">
+        <img src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        <h4>Arsenal - Man.City</h4>
+      </div>
+      <div class="naziv-sporta">
+        <h4 style="color: #222831">Nogomet</h4>
+        <p style="color: #222831">Tip: X</p>
+      </div>
+      <div class="par-datum">
+        <img class="sat" src="../../../assets/Slike/clock.png" alt="">
+        <h5>
+          10.01.2022(ned.) 14:00
+        </h5>
+        <h6 style="float:right; margin-left: 7%; margin-top: 5%" >3.55</h6>
+      </div>
+
+    </div>
+    <div class="obrisi-container">
+      <img (click)="Kliknut3()" class="zatvori" src="../../../assets/Slike/close.png" alt="">
+
+    </div>
+  </div>
+  <div class="par-container" *ngIf="!kliknutZatvori4">
+    <div class="par">
+      <div class="par-naslov">
+        <img src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        <h4>Atl. Madrid - Villareal</h4>
+      </div>
+      <div class="naziv-sporta">
+        <h4 style="color: #222831">Nogomet</h4>
+        <p style="color: #222831">Tip: 1</p>
+      </div>
+      <div class="par-datum">
+        <img class="sat" src="../../../assets/Slike/clock.png" alt="">
+        <h5>
+          10.01.2022(ned.) 14:00
+        </h5>
+        <h6 style="float:right; margin-left: 7%; margin-top: 5%" >1.95</h6>
+      </div>
+
+    </div>
+    <div class="obrisi-container">
+      <img (click)="Kliknut4()" class="zatvori" src="../../../assets/Slike/close.png" alt="">
+
+    </div>
+  </div>
+  <div class="par-container" *ngIf="!kliknutZatvori5" >
+    <div class="par">
+      <div class="par-naslov">
+        <img src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        <h4>Inter - Milan</h4>
+      </div>
+      <div class="naziv-sporta">
+        <h4 style="color: #222831">Nogomet</h4>
+        <p style="color: #222831">Tip: 2</p>
+      </div>
+      <div class="par-datum">
+        <img class="sat" src="../../../assets/Slike/clock.png" alt="">
+        <h5>
+          10.01.2022(ned.) 14:00
+        </h5>
+        <h6 style="float:right; margin-left: 7%; margin-top: 5%">2.45</h6>
+      </div>
+
+    </div>
+    <div class="obrisi-container">
+      <img (click)="Kliknut5()" class="zatvori" src="../../../assets/Slike/close.png" alt="">
+
+    </div>
+  </div>
+  <div class="donji-container" *ngIf="brojac!==0">
+    <div class="container-brojac">
+      <p>Broj parova: </p>
+      <p id="brojac">{{brojac}}</p>
+    </div>
+    <div class="container-kvota">
+      <p>Koeficijent: </p>
+      <p>41.34</p>
+    </div>
+    <div class="container-uplata">
+      <input type="text" name="uplata" id="uplata" placeholder="1.00">
+    </div>
+    <div class="container-isplata">
+      <p>Moguća isplata: </p>
+      <p>41.34</p>
+    </div>
+    <button id="btn-uplati">Uplati</button>
+  </div>
+</div>
+
+<app-footer></app-footer>
