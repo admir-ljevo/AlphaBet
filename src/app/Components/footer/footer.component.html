@@ -7,18 +7,23 @@
 
   <div class="button-container" (click)="Kliknut2()"
   [ngStyle]="{'background-color': isKliknut2===true ? '#fd7014': '#EEEEEE'}">
-    <img src="../../../assets/Slike/lopta.png" alt="">
+    <a routerLink="/ponuda"><img src="../../../assets/Slike/lopta.png" alt="">
     <p>Ponuda</p>
+    </a>
   </div>
   <div class="button-container" (click)="Kliknut3()"
        [ngStyle]="{'background-color': isKliknut3===true ? '#fd7014': '#EEEEEE'}">
+    <a routerLink="/rezultati">
     <img src="../../../assets/Slike/stoperica.png" alt="">
     <p>Rezultati</p>
+    </a>
   </div>
   <div class="button-container" (click)="Kliknut4()"
        [ngStyle]="{'background-color': isKliknut4===true ? '#fd7014': '#EEEEEE'}">
+    <a routerLink="/tiket">
     <img src="../../../assets/Slike/poklon.png" alt="">
-    <p>Bonusi</p>
+    <p>Tiket</p>
+    </a>
   </div>
   <div class="button-container" (click)="Kliknut5()"
        [ngStyle]="{'background-color': isKliknut5===true ? '#fd7014': '#EEEEEE'}">

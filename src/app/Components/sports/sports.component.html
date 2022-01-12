@@ -1,0 +1,672 @@
+<div class="sports-container" *ngIf="izbornik.isKliknut1">
+  <div class="naslov-container">
+    <img class="lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+    <h4>TOP LIGE</h4>
+
+  </div>
+
+  <div class="lige-sadrzaj">
+    <div class="lige-lista">
+      <div class="lige-item">
+        <div (click)="item1IsVisible = !item1IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/engleska.png" alt="">
+          <h4>Engleska: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item1IsVisible" class="liga-content">
+          <div class="utakmica-container">
+
+          <div class="naziv-para-container">
+            <img class="img-klub"src="../../../assets/Slike/manchester-united.png" alt="">
+            <h3>Man.Utd-Liverpool</h3>
+            <img class="img-klub"src="../../../assets/Slike/liverpool.png" alt="">
+          </div>
+          <div class="datum-pocetka">
+            <img class="utakmica-sat" src="../../../assets/Slike/clock.png" alt="">
+            <h5 class="datum-txt">10.01.2022(ned.) 14:00</h5>
+          </div>
+          <div class="container-kvote">
+             <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" (click)="Kliknut1()" [ngStyle]="{backgroundColor: kvota1Klik===true ? '#fd7014': '#EEEEEE'}">
+                  1
+                </div>
+               <div class="btn-kvota-1-desno">
+                 1.95
+               </div >
+             </div>
+            <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  X
+                </div>
+              <div  class="btn-kvota-1-desno">
+                 3.55
+               </div >
+            </div>
+            <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  2
+                </div>
+              <div  class="btn-kvota-1-desno">
+                 2.10
+               </div >
+            </div>
+          </div>
+          <div class="container-kvote2">
+            <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  1x
+                </div>
+              <div  class="btn-kvota-2-desno">
+                 1.35
+               </div >
+            </div>
+            <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  X2
+                </div>
+              <div  class="btn-kvota-2-desno">
+                 1.45
+               </div >
+            </div>
+            <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  12
+                </div>
+              <div  class="btn-kvota-2-desno">
+                 1.65
+               </div >
+            </div>
+          </div>
+          </div>
+          <div class="utakmica-container">
+
+            <div class="naziv-para-container">
+              <img class="img-klub"src="../../../assets/Slike/Arsenal.png" alt="">
+              <h3>Arsenal-Man-City-</h3>
+              <img class="img-klub"src="../../../assets/Slike/Manchester-City-icon.png" alt="">
+            </div>
+            <div class="datum-pocetka">
+              <img class="utakmica-sat" src="../../../assets/Slike/clock.png" alt="">
+              <h5 class="datum-txt">10.01.2022(ned.) 14:00</h5>
+            </div>
+            <div class="container-kvote">
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" >
+                  1
+                </div>
+                <div  class="btn-kvota-1-desno">
+                 1.95
+               </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" (click)="Kliknut2()" [ngStyle]="{backgroundColor: kvota2Klik===true ? '#fd7014': '#EEEEEE'}">
+                  X
+                </div>
+                <div  class="btn-kvota-1-desno">
+                 3.55
+               </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  2
+                </div>
+                <div  class="btn-kvota-1-desno">
+                 2.10
+               </div >
+              </div>
+            </div>
+            <div class="container-kvote2">
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  1x
+                </div>
+                <div  class="btn-kvota-2-desno">
+                 1.35
+               </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  X2
+                </div>
+                <div  class="btn-kvota-2-desno">
+                 1.45
+               </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  12
+                </div>
+                <div  class="btn-kvota-2-desno">
+                 1.65
+               </div >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item2IsVisible = !item2IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/spanija.png" alt="">
+          <h4>Španjolska: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item2IsVisible" class="liga-content">
+          <div class="utakmica-container">
+
+            <div class="naziv-para-container">
+              <img class="img-klub"src="../../../assets/Slike/real-madrid.png" alt="">
+              <h3>Real Madrid - Barcelona</h3>
+              <img class="img-klub"src="../../../assets/Slike/barcelona.png" alt="">
+            </div>
+            <div class="datum-pocetka">
+              <img class="utakmica-sat" src="../../../assets/Slike/clock.png" alt="">
+              <h5 class="datum-txt">10.01.2022(ned.) 14:00</h5>
+            </div>
+            <div class="container-kvote">
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" (click)="Kliknut3()" [ngStyle]="{backgroundColor: kvota3Klik===true?'#fd7014': '#EEEEEE'}">
+                  1
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  1.25
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  X
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  3.55
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  2
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  5.65
+                </div >
+              </div>
+            </div>
+            <div class="container-kvote2">
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  1x
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.05
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  X2
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  2.10
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  12
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.65
+                </div >
+              </div>
+            </div>
+          </div>
+          <div class="utakmica-container">
+
+            <div class="naziv-para-container">
+              <img class="img-klub"src="../../../assets/Slike/atletico-madrid.png" alt="">
+              <h3>Atletico Madrid - Villareal</h3>
+              <img class="img-klub"src="../../../assets/Slike/villareal.png" alt="">
+            </div>
+            <div class="datum-pocetka">
+              <img class="utakmica-sat" src="../../../assets/Slike/clock.png" alt="">
+              <h5 class="datum-txt">10.01.2022(ned.) 14:00</h5>
+            </div>
+            <div class="container-kvote">
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" (click)="Kliknut4()" [ngStyle]="{backgroundColor: kvota4Klik===true?'#fd7014': '#EEEEEE'}">
+                  1
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  1.95
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  X
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  3.55
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  2
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  2.10
+                </div >
+              </div>
+            </div>
+            <div class="container-kvote2">
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  1x
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.35
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  X2
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.45
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  12
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.65
+                </div >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item3IsVisible = !item3IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/italija.png" alt="">
+          <h4>Italija: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item3IsVisible" class="liga-content">
+          <div class="utakmica-container">
+
+            <div class="naziv-para-container">
+              <img class="img-klub"src="../../../assets/Slike/inter.png" alt="">
+              <h3>Inter - Milan</h3>
+              <img class="img-klub"src="../../../assets/Slike/milan.png" alt="">
+            </div>
+            <div class="datum-pocetka">
+              <img class="utakmica-sat" src="../../../assets/Slike/clock.png" alt="">
+              <h5 class="datum-txt">10.01.2022(ned.) 14:00</h5>
+            </div>
+            <div class="container-kvote">
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" >
+                  1
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  1.95
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  X
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  3.25
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" (click)="Kliknut5()" [ngStyle]="{backgroundColor: kvota5Klik===true?'#fd7014': '#EEEEEE'}">
+                  2
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  2.45
+                </div >
+              </div>
+            </div>
+            <div class="container-kvote2">
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  1x
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.35
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  X2
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.45
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  12
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.65
+                </div >
+              </div>
+            </div>
+          </div>
+          <div class="utakmica-container">
+
+            <div class="naziv-para-container">
+              <img class="img-klub"src="../../../assets/Slike/benevento.png" alt="">
+              <h3>Benevento - Roma</h3>
+              <img class="img-klub"src="../../../assets/Slike/roma.png" alt="">
+            </div>
+            <div class="datum-pocetka">
+              <img class="utakmica-sat" src="../../../assets/Slike/clock.png" alt="">
+              <h5 class="datum-txt">10.01.2022(ned.) 14:00</h5>
+            </div>
+            <div class="container-kvote">
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" >
+                  1
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  8.60
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  X
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  5.60
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  2
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  1.35
+                </div >
+              </div>
+            </div>
+            <div class="container-kvote2">
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  1x
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  3.50
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  X2
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.02
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  12
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.65
+                </div >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item4IsVisible = !item4IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/njemacka.png" alt="">
+          <h4>Njemačka: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item4IsVisible" class="liga-content">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item5IsVisible = !item5IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/francuska.png" alt="">
+          <h4>Francuska: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item5IsVisible" class="liga-content">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+<div class="sports-container" *ngIf="izbornik.isKliknut2">
+  <div class="naslov-container">
+    <img class="lopta" src="../../../assets/Slike/kosarka-ikona.png" alt="">
+    <h4>TOP LIGE</h4>
+
+  </div>
+
+  <div class="lige-sadrzaj">
+    <div class="lige-lista">
+      <div class="lige-item">
+        <div (click)="item1IsVisible = !item1IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/engleska.png" alt="">
+          <h4>Engleska: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item1IsVisible" class="liga-content">
+          <div class="utakmica-container">
+
+            <div class="naziv-para-container">
+              <img class="img-klub"src="../../../assets/Slike/manchester-united.png" alt="">
+              <h3>Man.Utd-Liverpool</h3>
+              <img class="img-klub"src="../../../assets/Slike/liverpool.png" alt="">
+            </div>
+            <div class="datum-pocetka">
+              <img class="utakmica-sat" src="../../../assets/Slike/clock.png" alt="">
+              <h5 class="datum-txt">10.01.2022(ned.) 14:00</h5>
+            </div>
+            <div class="container-kvote">
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" (click)="Kliknut1()" [ngStyle]="{backgroundColor: kvota1Klik===true ? '#fd7014': '#EEEEEE'}">
+                  1
+                </div>
+                <div class="btn-kvota-1-desno">
+                  1.95
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  X
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  3.55
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  2
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  2.10
+                </div >
+              </div>
+            </div>
+            <div class="container-kvote2">
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  1x
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.35
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  X2
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.45
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  12
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.65
+                </div >
+              </div>
+            </div>
+          </div>
+          <div class="utakmica-container">
+
+            <div class="naziv-para-container">
+              <img class="img-klub"src="../../../assets/Slike/Arsenal.png" alt="">
+              <h3>Arsenal-Man-City-</h3>
+              <img class="img-klub"src="../../../assets/Slike/Manchester-City-icon.png" alt="">
+            </div>
+            <div class="datum-pocetka">
+              <img class="utakmica-sat" src="../../../assets/Slike/clock.png" alt="">
+              <h5 class="datum-txt">10.01.2022(ned.) 14:00</h5>
+            </div>
+            <div class="container-kvote">
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" >
+                  1
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  1.95
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo" (click)="Kliknut2()" [ngStyle]="{backgroundColor: kvota2Klik===true ? '#fd7014': '#EEEEEE'}">
+                  X
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  3.55
+                </div >
+              </div>
+              <div class="btn-kvota-1">
+                <div  class="btn-kvota-1-lijevo">
+                  2
+                </div>
+                <div  class="btn-kvota-1-desno">
+                  2.10
+                </div >
+              </div>
+            </div>
+            <div class="container-kvote2">
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  1x
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.35
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  X2
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.45
+                </div >
+              </div>
+              <div class="btn-kvota-2">
+                <div  class="btn-kvota-2-lijevo">
+                  12
+                </div>
+                <div  class="btn-kvota-2-desno">
+                  1.65
+                </div >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item2IsVisible = !item2IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/spanija.png" alt="">
+          <h4>Španjolska: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item2IsVisible" class="liga-content">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item3IsVisible = !item3IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/italija.png" alt="">
+          <h4>Italija: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item3IsVisible" class="liga-content">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item4IsVisible = !item4IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/njemacka.png" alt="">
+          <h4>Njemačka: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item4IsVisible" class="liga-content">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lige-item">
+        <div (click)="item5IsVisible = !item5IsVisible" class="liga-naslov">
+          <img class="liga-zastava" src="../../../assets/Slike/francuska.png" alt="">
+          <h4>Francuska: 1. Liga</h4>
+          <img class="liga-lopta" src="../../../assets/Slike/fudbal-ikona.png" alt="">
+        </div>
+        <div *ngIf="item5IsVisible" class="liga-content">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+<a routerLink="/tiket">
+<div class="tiket-traka" *ngIf="brojac!==0">
+  <div class="brojac-isplata">
+    <div class="brojac-klasa"> <p id="brojac-id">{{this.brojac}}</p>
+    </div>
+    <p class="kvota-tiket">Koeficijent:</p>
+    <p class="kvota-tiket">{{this.kvota %1?this.kvota.toFixed(2): this.kvota}}</p>
+  </div>
+  <div class="tiket-ikona">
+    <img id="tiket" src="../../../assets/Slike/document.png" alt="">
+  </div>
+</div>
+</a>

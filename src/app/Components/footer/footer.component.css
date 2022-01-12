@@ -20,6 +20,11 @@ justify-content: space-between;
   text-align: center;
 
 }
+
+a{
+  color: #222831;
+  text-decoration: none;
+}
 img{
   margin-top: 5%;
   margin-left: 20%;

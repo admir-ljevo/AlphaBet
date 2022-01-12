@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-izbornik',
@@ -11,10 +11,21 @@ export class IzbornikComponent implements OnInit {
   public isKliknut3: boolean=false;
   public isKliknut4: boolean=false;
   public isKliknut5: boolean=false;
-  constructor() { }
+  constructor() {
+    this.isKliknut1 = true;
+    this.isKliknut2 = false;
+    this.isKliknut3 = false;
+    this.isKliknut4 = false;
+    this.isKliknut5 = false;
+  }
+
+  @Output() btnClick=new EventEmitter();
 
   ngOnInit(): void {
   }
+
+
+
   Kliknut1() {
     this.isKliknut1=!this.isKliknut1;
     this.isKliknut2=false;
@@ -22,18 +33,25 @@ export class IzbornikComponent implements OnInit {
     this.isKliknut4=false;
     this.isKliknut5=false;
 
-
   }
 
-  Kliknut2() {
+  // promijeniVrijednost2(){
+  //   this.isKliknut1=false;
+  //   this.isKliknut2=!this.isKliknut2;
+  //   this.isKliknut3=false;
+  //   this.isKliknut4=false;
+  //   this.isKliknut5=false;
+  // }
+  public Kliknut2() {
     this.isKliknut1=false;
-    this.isKliknut2=!this.isKliknut2;
+    this.isKliknut2=true;
     this.isKliknut3=false;
     this.isKliknut4=false;
     this.isKliknut5=false;
+
   }
 
-  Kliknut3() {
+ public Kliknut3() {
     this.isKliknut1=false;
     this.isKliknut2=false;
     this.isKliknut3=!this.isKliknut3;

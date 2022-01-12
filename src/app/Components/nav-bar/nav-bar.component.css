@@ -6,6 +6,7 @@
   position: fixed;
   display: flex;
   flex-direction: row;
+  z-index: 99999;
 }
 .lijevi{
   padding: 0;
@@ -52,7 +53,7 @@ h1{
   height: 27px;
   width: 27px;
   margin-left: 3px;
-  margin-top: 30px;
+  margin-top: 10px;
   -webkit-transform: skewX(10deg);
   -moz-transform: skewX(10deg);
   -ms-transform: skewX(10deg);
@@ -78,7 +79,7 @@ button {
 
 #buttonLog{
   height: 42px;
-  width: 45%;
+  width: 50%;
   border-radius: 10px;
   color: #fd7014;
 
@@ -86,7 +87,7 @@ button {
 }
 #buttonReg{
   height: 42px;
-  width: 45%;
+  width: 60%;
   border-radius: 10px;
   color: #fd7014;
 

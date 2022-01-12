@@ -15,6 +15,16 @@ import { SportsComponent } from './Components/sports/sports.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import { MatSliderModule } from '@angular/material/slider';
 import {AccordionModule} from "ngx-bootstrap/accordion";
+import { TiketComponent } from './Components/tiket/tiket.component';
+import {RouterModule, Routes} from "@angular/router";
+import { PonudaComponent } from './Components/ponuda/ponuda.component';
+import { RezultatiComponent } from './Components/rezultati/rezultati.component';
+
+const appRoutes: Routes=[
+  {path: 'ponuda', component: PonudaComponent},
+  {path: 'tiket', component: TiketComponent }
+
+];
 
 @NgModule({
   declarations: [
@@ -23,7 +33,10 @@ import {AccordionModule} from "ngx-bootstrap/accordion";
     BannersComponent,
     FooterComponent,
     IzbornikComponent,
-    SportsComponent
+    SportsComponent,
+    TiketComponent,
+    PonudaComponent,
+    RezultatiComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +46,8 @@ import {AccordionModule} from "ngx-bootstrap/accordion";
     BrowserAnimationsModule,
     MatExpansionModule,
     MatSliderModule,
-    AccordionModule.forRoot()
+    AccordionModule.forRoot(),
+    RouterModule.forRoot(appRoutes,{enableTracing:true})
 
   ],
   providers: [],

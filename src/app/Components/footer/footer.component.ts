@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   public isKliknut1: boolean=false;
-  public isKliknut2: boolean=true;
+  public isKliknut2: boolean=false;
   public isKliknut3: boolean=false;
   public isKliknut4: boolean=false;
   public isKliknut5: boolean=false;

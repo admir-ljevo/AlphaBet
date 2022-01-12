@@ -1,0 +1,260 @@
+.sports-container{
+  position: absolute;
+  margin-top: 365px;
+  width: 100%;
+  background-color: #393e46;
+  padding-bottom: 80px;
+}
+.lopta{
+
+  height: 30px;
+  width: 30px;
+  margin-top: 4%;
+  margin-left: 5%;
+}
+.naslov-container{
+  border-top: 1px solid #fd7014;
+  border-bottom: 1px solid #fd7014;
+  position: relative;
+  height: 30%;
+  width: 100%;
+  background-color: #222831;
+  display: flex;
+  flex-direction: row;justify-content: flex-start;
+}
+h4{
+  margin-left: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #EEEEEE;
+  font-weight: normal;
+}
+.liga-naslov{
+  width: 100%;
+  background-color: #222831;
+  display: flex;
+  flex-direction: row;
+  padding-left: 4%;
+  border-bottom: 1px solid #EEEEEE;
+}
+.liga-zastava{
+ padding-top: 5%;
+  height: 7%;
+  width: 7%;
+}
+.liga-lopta{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 4.5%;
+  right: 2%;
+}
+.lige-lista{
+
+
+}
+.lige-sadrzaj{
+
+
+}
+.liga-content{
+    width: 100%;
+    background-color: #393e46;
+    border-bottom: 1px solid #EEEEEE;
+
+}
+.naziv-para-container{
+
+  background-color: #393e46;
+  display: flex;
+  flex-direction: row;
+
+}
+.img-klub{
+  height: 22px;
+  width: 21px;
+  margin-top: 5%;
+  margin-left: 6px;
+}
+h3{
+  color: #EEEEEE;
+  font-weight: normal;
+  font-family: 'Roboto';
+  margin-left: 6px;
+  margin-top: 5%;
+}
+.utakmica-sat{
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  margin-top: 6px;
+  margin-right: 5px;
+  color: #EEEEEE;
+}
+.datum-pocetka{
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.datum-txt{
+  margin-top: 5px;
+  margin-left: 5px;
+  color: darkgray;
+}
+
+.container-kvote{
+  width: 100%;
+  background-color: #393e46;
+  display: flex;
+  justify-content: space-between;
+
+}
+.container-kvote2{
+  width: 100%;
+  background-color: #393e46;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fd7014;
+
+}
+.btn-kvota-1{
+  width: 25%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+.btn-kvota-1-desno{
+  position: relative;
+  width: 50%;
+
+  text-align: center;
+  background-color: #222831;
+  color: #EEEEEE;
+  padding-top: 10px;
+  padding-bottom: 0;
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  border-top: 1px solid #fd7014;
+  border-bottom: 1px solid #fd7014;
+}
+
+.btn-kvota-1-lijevo{
+  border-top: 1px solid #fd7014;
+  border-bottom: 1px solid #fd7014;
+  position: relative;
+  background-color: #EEEEEE;
+  width: 50%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0;-webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+.btn-kvota-2{
+  width: 25%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+.btn-kvota-2-desno{
+  position: relative;
+  width: 50%;
+  text-align: center;
+  background-color: #222831;
+  color: #EEEEEE;
+  padding-top: 10%;
+
+  -webkit-transform: skewX(10deg);
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  transform: skewX(10deg);
+  border-top: 1px solid #fd7014;
+  border-bottom: 1px solid #fd7014;
+}
+
+.btn-kvota-2-lijevo{
+  border-top: 1px solid #fd7014;
+  border-bottom: 1px solid #fd7014;
+  position: relative;
+  background-color: #EEEEEE;
+  width: 50%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0;-webkit-transform: skewX(10deg);
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  transform: skewX(10deg);
+}
+
+.tiket-traka{
+  height: 50px;
+  width: 100%;
+  background-color: #222831;
+  position: fixed;
+  bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  opacity: 0.95;
+}
+.brojac-klasa{
+  background-color: #fd7014;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #EEEEEE;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+#brojac-id{
+  margin: 0;
+}
+.brojac-isplata{
+  width: 60%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.kvota-tiket{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  color: #EEEEEE;
+}
+
+.tiket-ikona{
+  width: 40%;
+  background-color: #222831;
+  height: 100%;
+}
+
+#tiket{
+  float: right;
+  height: 36px;
+  width: 36px;
+  background-color: #EEEEEE;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 5px;
+
+
+}
