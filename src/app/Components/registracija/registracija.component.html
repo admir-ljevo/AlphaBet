@@ -1,0 +1,23 @@
+<app-nav-bar></app-nav-bar>
+<app-banners></app-banners>
+<div class="container">
+  <form [formGroup]="formaRegistracija">
+    <h1>REGISTRACIJA</h1>
+    <div class="form-group">
+
+      <input type="text" formControlName ="username" placeholder="Korisničko ime *" id="username" name="username">
+      <span class="text-muted" *ngIf="formaRegistracija.get('username')?.invalid && formaRegistracija.get('username')?.touched"> Korisničko ime je obavezno! (min. 4)</span>
+
+      <input name="password" type="password" formControlName ="password" placeholder="Lozinka *" id ="password">
+      <span class="text-muted" *ngIf="formaRegistracija.get('password')?.invalid && formaRegistracija.get('password')?.touched">Lozinka je obavezna! (min. 8)</span>
+
+      <input type="password" formControlName ="confirmpassword" name ="confirmpassword" placeholder="Potvrdite lozinku *" id ="confirmpassword">
+      <span class="text-muted" *ngIf="formaRegistracija.get('confirmpassword')?.invalid && formaRegistracija.get('confirmpassword')?.touched" name="">Unesene lozinke nisu iste!</span>
+
+      <input type="email" class="form-control" id="email" placeholder="Email adresa *" formControlName="email" name="email">
+      <span class="text-muted" *ngIf="formaRegistracija.get('email')?.invalid && formaRegistracija.get('email')?.touched">Email format nepostojeći!</span>
+
+    </div>
+    <button class="regist" type="submit" [disabled]="!formaRegistracija.valid" routerLink="/registracija-uspjesna" routerLinkActive="active">REGISTER</button>
+  </form>
+</div>
