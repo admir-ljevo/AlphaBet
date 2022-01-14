@@ -12,7 +12,9 @@ const routes: Routes = [
 
   {path: 'tiket', component: TiketComponent },
 
-  {path:'rezultati', component: RezultatiComponent}
+  {path:'rezultati', component: RezultatiComponent},
+
+  {path: '', redirectTo:'ponuda', pathMatch: 'full'}
 ];
 
 @NgModule({

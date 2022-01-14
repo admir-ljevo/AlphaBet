@@ -19,11 +19,16 @@ import { TiketComponent } from './Components/tiket/tiket.component';
 import {RouterModule, Routes} from "@angular/router";
 import { PonudaComponent } from './Components/ponuda/ponuda.component';
 import { RezultatiComponent } from './Components/rezultati/rezultati.component';
+import { RegistracijaComponent } from './Components/registracija/registracija.component';
+import { LoginComponent } from './Components/login/login.component';
+import { RegistracijaUspjesnaComponent } from './Components/registracija-uspjesna/registracija-uspjesna.component';
 
 const appRoutes: Routes=[
   {path: 'ponuda', component: PonudaComponent},
-  {path: 'tiket', component: TiketComponent }
-
+  {path: 'tiket', component: TiketComponent },
+  {path: 'login', component: LoginComponent },
+  {path: 'registracija', component: RegistracijaComponent },
+  {path: 'registracija-uspjesna', component: RegistracijaUspjesnaComponent }
 ];
 
 @NgModule({
@@ -36,7 +41,10 @@ const appRoutes: Routes=[
     SportsComponent,
     TiketComponent,
     PonudaComponent,
-    RezultatiComponent
+    RezultatiComponent,
+    RegistracijaComponent,
+    LoginComponent,
+    RegistracijaUspjesnaComponent
   ],
   imports: [
     BrowserModule,

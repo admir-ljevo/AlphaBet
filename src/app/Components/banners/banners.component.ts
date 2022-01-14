@@ -20,12 +20,12 @@ export class BannersComponent implements OnInit {
     {
       "id": 1,
       "naziv": "fudbal",
-      "url": "../../../assets/Slike/fudbal.jpg"
+      "url": "../../../assets/Slike/baner.png"
     },
     {
       "id": 2,
       "naziv": "fudbal2",
-      "url": "../../../assets/Slike/6747_item_a.jpg"
+      "url": "../../../assets/Slike/baner2.png"
     }
 
 
