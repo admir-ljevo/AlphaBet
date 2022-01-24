@@ -1,8 +1,9 @@
 <div class="footer-container">
   <div class="button-container" (click)="Kliknut1()"
        [ngStyle]="{'background-color': isKliknut1===true ? '#fd7014': '#EEEEEE'}">
-    <img src="../../../assets/Slike/icons8-home-24.png" alt="">
+    <a routerLink="/home"><img src="../../../assets/Slike/icons8-home-24.png" alt="">
     <p>Home</p>
+    </a>
   </div>
 
   <div class="button-container" (click)="Kliknut2()"

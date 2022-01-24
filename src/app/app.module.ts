@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {animate, style, transition, trigger} from "@angular/animations";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
@@ -22,13 +19,17 @@ import { RezultatiComponent } from './Components/rezultati/rezultati.component';
 import { RegistracijaComponent } from './Components/registracija/registracija.component';
 import { LoginComponent } from './Components/login/login.component';
 import { RegistracijaUspjesnaComponent } from './Components/registracija-uspjesna/registracija-uspjesna.component';
+import { HomeNovostiComponent } from './Components/home-novosti/home-novosti.component';
+import { VijestPsgComponent } from './Components/vijest-psg/vijest-psg.component';
 
 const appRoutes: Routes=[
   {path: 'ponuda', component: PonudaComponent},
   {path: 'tiket', component: TiketComponent },
   {path: 'login', component: LoginComponent },
   {path: 'registracija', component: RegistracijaComponent },
-  {path: 'registracija-uspjesna', component: RegistracijaUspjesnaComponent }
+  {path: 'registracija-uspjesna', component: RegistracijaUspjesnaComponent },
+  {path: 'home', component: HomeNovostiComponent },
+  {path: 'psg-u-problemima', component: VijestPsgComponent }
 ];
 
 @NgModule({
@@ -44,7 +45,9 @@ const appRoutes: Routes=[
     RezultatiComponent,
     RegistracijaComponent,
     LoginComponent,
-    RegistracijaUspjesnaComponent
+    RegistracijaUspjesnaComponent,
+    HomeNovostiComponent,
+    VijestPsgComponent
   ],
   imports: [
     BrowserModule,

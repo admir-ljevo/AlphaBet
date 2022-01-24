@@ -1,0 +1,26 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <button class="nazad" routerLink="/home" routerLinkActive="active"> < NAZAD</button>
+  <h1>PSG u problemima! Argentinac bez rješenja za odbranu Chelseaja</h1>
+  <img src="../assets/Slike/messi.jpg" alt="" class="slika-vijest">
+  <img class="oko" src="../../../assets/Slike/oko.png" alt="">
+  <p class="broj-pregleda">125</p>
+  <p class="objava">Objavio: Ahmed B. Datum: 23.01.2022. Vrijeme: 22:31</p>
+  <h5>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </h5>
+  <p class="vijest">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <button [ngClass]="[btnStyle]" (click)="submit(); popup = true">ZAINTERESOVAN SAM</button>
+  <div class="overlay" *ngIf="popup">
+    <div class="popup">
+      <h2>Označili ste zainteresovanost za ovu vijest!</h2>
+      <a class="close" (click)="popup = false">&times;</a>
+      <div class="content">
+        U budućnosti će Vam se prikazivati više vijesti sa tagovima: #PSG, #Messi, #Chelsea, #Fudbal, #LigaPrvaka
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

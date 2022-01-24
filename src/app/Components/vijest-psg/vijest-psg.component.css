@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Roboto;
+}
+.container{
+  background-color: #222831;
+  width: 100%;
+  padding-bottom: 80px;
+  margin-top: 90px;
+  position: relative;
+}
+h1{
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 20px;
+}
+.slika-vijest{
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 23px;
+  border-radius: 10px;
+}
+.objava{
+  color: whitesmoke;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 23px;
+}
+.oko{
+  margin-left: 23px;
+  width: 16px; height: 16px;
+}
+.broj-pregleda{
+  position: absolute;
+  margin-top: -18px;
+  color: whitesmoke;
+  font-size: 12px;
+  margin-left: 43px;
+}
+.vijest{
+  color: whitesmoke;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 23px;
+}
+h5{
+  color: #fd7014;
+  margin-top: 10px;
+  margin-left: 23px;
+  margin-bottom: 20px;
+}
+.btn-default{
+  background-color: transparent;
+  color: green;
+  border: 1px solid green;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 120px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.btn-change{
+  background-color: green;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 120px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.popup {
+  margin: 200px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Roboto, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+  cursor: pointer;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.nazad{
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #fd7014;
+  color: #fd7014;
+  padding: 3px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 700px){
+
+  .popup{
+    width: 70%;
+  }
+}
