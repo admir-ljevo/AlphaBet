@@ -6,6 +6,7 @@ import {SportsComponent} from "./Components/sports/sports.component";
 import {TiketComponent} from "./Components/tiket/tiket.component";
 import {PonudaComponent} from "./Components/ponuda/ponuda.component";
 import {RezultatiComponent} from "./Components/rezultati/rezultati.component";
+import {JackpotComponent} from "./Components/jackpot/jackpot.component";
 
 const routes: Routes = [
   {path: 'ponuda', component: PonudaComponent },
@@ -13,6 +14,8 @@ const routes: Routes = [
   {path: 'tiket', component: TiketComponent },
 
   {path:'rezultati', component: RezultatiComponent},
+
+  {path:'jackpot', component: JackpotComponent},
 
   {path: '', redirectTo:'ponuda', pathMatch: 'full'}
 ];

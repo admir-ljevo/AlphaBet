@@ -22,6 +22,7 @@ import { RezultatiComponent } from './Components/rezultati/rezultati.component';
 import { RegistracijaComponent } from './Components/registracija/registracija.component';
 import { LoginComponent } from './Components/login/login.component';
 import { RegistracijaUspjesnaComponent } from './Components/registracija-uspjesna/registracija-uspjesna.component';
+import { JackpotComponent } from './Components/jackpot/jackpot.component';
 
 const appRoutes: Routes=[
   {path: 'ponuda', component: PonudaComponent},
@@ -44,7 +45,8 @@ const appRoutes: Routes=[
     RezultatiComponent,
     RegistracijaComponent,
     LoginComponent,
-    RegistracijaUspjesnaComponent
+    RegistracijaUspjesnaComponent,
+    JackpotComponent
   ],
   imports: [
     BrowserModule,
