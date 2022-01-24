@@ -1,0 +1,45 @@
+.jackpot-naslov{
+  position: absolute;
+  margin-top: 290px;
+  width: 100%;
+  background-color: #222831;
+  text-align: center;
+  color: #fd7014;
+
+}
+.jackpot-tekst{
+  position: absolute;
+  margin-top: 328px;
+  width: 100%;
+  background-color: #222831;
+  color: #EEEEEE;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: #fd7014;
+  text-align: center;
+}
+#tabela{
+  position: absolute;
+  top: 420px;
+  border: 1px solid #EEEEEE;
+  width: 100%;
+  background-color: #393e46;
+
+}
+th{
+  border: 1px solid #EEEEEE;
+  color: #EEEEEE;
+  text-align: center
+}
+td{
+  border: 1px solid #EEEEEE;
+  color: #EEEEEE;
+  text-align: center;
+}
+tr{
+  height: 45px;
+}

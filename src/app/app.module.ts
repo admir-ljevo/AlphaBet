@@ -21,15 +21,14 @@ import { LoginComponent } from './Components/login/login.component';
 import { RegistracijaUspjesnaComponent } from './Components/registracija-uspjesna/registracija-uspjesna.component';
 import { HomeNovostiComponent } from './Components/home-novosti/home-novosti.component';
 import { VijestPsgComponent } from './Components/vijest-psg/vijest-psg.component';
+import { JackpotComponent } from './Components/jackpot/jackpot.component';
 
 const appRoutes: Routes=[
   {path: 'ponuda', component: PonudaComponent},
   {path: 'tiket', component: TiketComponent },
   {path: 'login', component: LoginComponent },
   {path: 'registracija', component: RegistracijaComponent },
-  {path: 'registracija-uspjesna', component: RegistracijaUspjesnaComponent },
-  {path: 'home', component: HomeNovostiComponent },
-  {path: 'psg-u-problemima', component: VijestPsgComponent }
+  {path: 'registracija-uspjesna', component: RegistracijaUspjesnaComponent }
 ];
 
 @NgModule({
@@ -48,6 +47,8 @@ const appRoutes: Routes=[
     RegistracijaUspjesnaComponent,
     HomeNovostiComponent,
     VijestPsgComponent
+    RegistracijaUspjesnaComponent,
+    JackpotComponent
   ],
   imports: [
     BrowserModule,

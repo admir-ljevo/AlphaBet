@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-tiket',
@@ -16,8 +17,15 @@ public brojac: number=5;
 public obrisiTiket: Boolean=false;
   constructor() { }
 
-  tiketObrisi(){
-    this.obrisiTiket=true;
+  tiketObrisi() {
+    this.obrisiTiket = true;
+    // @ts-ignore
+    Swal.fire('Uspješno ste obrisali tiket', '', 'warning')
+  }
+
+
+  successAlertNotification(){
+    Swal.fire('Hi', 'Congrats! operation successfull', 'success');
   }
 
   Kliknut1(){
@@ -39,6 +47,10 @@ public obrisiTiket: Boolean=false;
   Kliknut5(){
     this.kliknutZatvori5=true;
     this.brojac--;
+  }
+
+  tiketUplacen(){
+    Swal.fire('Uspješno ste uplatili tiket', '', 'success')
   }
 
   ngOnInit(): void {

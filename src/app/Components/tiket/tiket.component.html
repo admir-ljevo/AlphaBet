@@ -1,6 +1,9 @@
 <app-nav-bar></app-nav-bar>
 
-<button class="obrisi-tiket" *ngIf="brojac>0 && obrisiTiket===false" (click)="tiketObrisi()">Obriši tiket</button>
+<button class="obrisi-tiket" *ngIf="brojac>0 && obrisiTiket===false" (click)="tiketObrisi()">
+  <img class="img-delete" src="../../../assets/Slike/delete-button-png-28565.png" alt="">
+  Obriši tiket
+</button>
 
 <div class="prazan-tiket-container" *ngIf="brojac===0 || obrisiTiket===true">
   <div class="prazan-gornji">
@@ -158,7 +161,7 @@
       <p>Moguća isplata: </p>
       <p>41.34</p>
     </div>
-    <button id="btn-uplati">Uplati</button>
+    <button id="btn-uplati" (click)="tiketUplacen()">Uplati</button>
   </div>
 </div>
 

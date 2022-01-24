@@ -7,6 +7,18 @@
   margin-right: 5%;
   box-sizing: border-box;
 }
+
+
+.img-delete{
+  height:24px;
+  width: 24px;
+  color: #222831;
+}
+
+.button.swal2-styled.swal2-confirm{
+  background-color: #fd7014;
+}
+
 .prazan-tiket-container{
   position: absolute;
   width: 90%;
@@ -173,11 +185,14 @@ h5{
   font-weight: bold;
 }
 
+swal-button{
+  background-color: #fd7014;
+}
 .obrisi-tiket{
   position: absolute;
   margin-top: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-left: 35%;
   width: 30%;
   background-color: #fd7014;
@@ -185,4 +200,5 @@ h5{
   font-family: 'Roboto';
   border-radius: 10px;
   margin-bottom: 20px;
+  height: 30px;
 }
